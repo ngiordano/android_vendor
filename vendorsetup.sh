@@ -1,0 +1,8 @@
+add_lunch_combo pa_maguro-userdebug
+add_lunch_combo pa_grouper-userdebug
+add_lunch_combo pa_galaxysmtd-userdebug
+add_lunch_combo pa_vibrantmtd-userdebug
+add_lunch_combo pa_hercules-userdebug
+add_lunch_combo pa_skyrocket-userdebug
+add_lunch_combo pa_n7000-userdebug
+
