@@ -12,36 +12,32 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
-    vendor/pa/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
-    vendor/pa/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
-    vendor/pa/prebuilt/common/bin/50-cna.sh:system/addon.d/50-cna.sh
+    vendor/cc/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/cc/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/cc/prebuilt/common/bin/50-cna.sh:system/addon.d/50-cna.sh
 
 # init.d support
 PRODUCT_COPY_FILES += \
-    vendor/pa/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
-    vendor/pa/prebuilt/common/bin/sysinit:system/bin/sysinit
+    vendor/cc/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
+    vendor/cc/prebuilt/common/bin/sysinit:system/bin/sysinit
 
 # userinit support
 PRODUCT_COPY_FILES += \
-    vendor/pa/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
+    vendor/cc/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
 
 # Compcache/Zram support
 PRODUCT_COPY_FILES += \
-    vendor/pa/prebuilt/common/etc/init.local.rc:system/etc/init.local.rc \
-    vendor/pa/prebuilt/common/bin/compcache:system/bin/compcache \
-    vendor/pa/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache
+    vendor/cc/prebuilt/common/etc/init.local.rc:system/etc/init.local.rc \
+    vendor/cc/prebuilt/common/bin/compcache:system/bin/compcache \
+    vendor/cc/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache
 
 PRODUCT_COPY_FILES +=  \
-    vendor/pa/proprietary/supersu/su:system/xbin/su
+    vendor/cc/proprietary/supersu/su:system/xbin/su
 
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
-    vendor/pa/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
-    vendor/pa/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
-
-# ParanoidAndroid Packages
-PRODUCT_PACKAGES += \
-    ParanoidWallpapers
+    vendor/cc/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
+    vendor/cc/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
@@ -49,33 +45,37 @@ PRODUCT_COPY_FILES += \
 
 # Don't export PS1 in /system/etc/mkshrc.
 PRODUCT_COPY_FILES += \
-    vendor/pa/prebuilt/common/etc/mkshrc:system/etc/mkshrc \
-    vendor/pa/prebuilt/common/etc/sysctl.conf:system/bin/sysctl.conf
+    vendor/cc/prebuilt/common/etc/mkshrc:system/etc/mkshrc \
+    vendor/cc/prebuilt/common/etc/sysctl.conf:system/bin/sysctl.conf
 
 PRODUCT_COPY_FILES += \
-    vendor/pa/prebuilt/common/etc/init.d/00check:system/etc/init.d/00check \
-    vendor/pa/prebuilt/common/etc/init.d/01zipalign:system/etc/init.d/01zipalign \
-    vendor/pa/prebuilt/common/etc/init.d/02sysctl:system/etc/init.d/02sysctl \
-    vendor/pa/prebuilt/common/etc/init.d/03firstboot:system/etc/init.d/03firstboot \
-    vendor/pa/prebuilt/common/etc/init.d/05freemem:system/etc/init.d/05freemem \
-    vendor/pa/prebuilt/common/etc/init.d/06removecache:system/etc/init.d/06removecache \
-    vendor/pa/prebuilt/common/etc/init.d/07fixperms:system/etc/init.d/07fixperms \
-    vendor/pa/prebuilt/common/etc/init.d/09cron:system/etc/init.d/09cron \
-    vendor/pa/prebuilt/common/etc/init.d/10sdboost:system/etc/init.d/10sdboost \
-    vendor/pa/prebuilt/common/etc/init.d/98tweaks:system/etc/init.d/98tweaks \
-    vendor/pa/prebuilt/common/etc/init_trigger.disabled:system/etc/init_trigger.disabled \
-    vendor/pa/prebuilt/common/etc/liberty.bsh:system/etc/liberty.bsh \
-    vendor/pa/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf    
+    vendor/cc/prebuilt/common/etc/init.d/00check:system/etc/init.d/00check \
+    vendor/cc/prebuilt/common/etc/init.d/01zipalign:system/etc/init.d/01zipalign \
+    vendor/cc/prebuilt/common/etc/init.d/02sysctl:system/etc/init.d/02sysctl \
+    vendor/cc/prebuilt/common/etc/init.d/03firstboot:system/etc/init.d/03firstboot \
+    vendor/cc/prebuilt/common/etc/init.d/05freemem:system/etc/init.d/05freemem \
+    vendor/cc/prebuilt/common/etc/init.d/06removecache:system/etc/init.d/06removecache \
+    vendor/cc/prebuilt/common/etc/init.d/07fixperms:system/etc/init.d/07fixperms \
+    vendor/cc/prebuilt/common/etc/init.d/09cron:system/etc/init.d/09cron \
+    vendor/cc/prebuilt/common/etc/init.d/10sdboost:system/etc/init.d/10sdboost \
+    vendor/cc/prebuilt/common/etc/init.d/98tweaks:system/etc/init.d/98tweaks \
+    vendor/cc/prebuilt/common/etc/init_trigger.disabled:system/etc/init_trigger.disabled \
+    vendor/cc/prebuilt/common/etc/liberty.bsh:system/etc/liberty.bsh \
+    vendor/cc/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf    
 
 PRODUCT_COPY_FILES += \
-    vendor/pa/prebuilt/common/etc/cron/cron.conf:system/etc/cron/cron.conf \
-    vendor/pa/prebuilt/common/etc/cron/cron.hourly/00drop_caches:system/etc/cron/cron.hourly/00drop_caches \
-    vendor/pa/prebuilt/common/etc/cron/cron.daily/00drop_caches:system/etc/cron/cron.daily/00drop_caches \
-    vendor/pa/prebuilt/common/etc/cron/cron.weekly/00drop_caches:system/etc/cron/cron.weekly/00drop_caches \
-    vendor/pa/prebuilt/common/etc/cron/cron.hourly/01clear_cache:system/etc/cron/cron.hourly/01clear_cache \
-    vendor/pa/prebuilt/common/etc/cron/cron.daily/01clear_cache:system/etc/cron/cron.daily/01clear_cache \
-    vendor/pa/prebuilt/common/etc/cron/cron.weekly/01clear_cache:system/etc/cron/cron.weekly/01clear_cache \
-    vendor/pa/prebuilt/common/app/ParanoidPreferences.apk:system/app/ParanoidPreferences.apk
+    vendor/cc/prebuilt/common/etc/cron/cron.conf:system/etc/cron/cron.conf \
+    vendor/cc/prebuilt/common/etc/cron/cron.hourly/00drop_caches:system/etc/cron/cron.hourly/00drop_caches \
+    vendor/cc/prebuilt/common/etc/cron/cron.daily/00drop_caches:system/etc/cron/cron.daily/00drop_caches \
+    vendor/cc/prebuilt/common/etc/cron/cron.weekly/00drop_caches:system/etc/cron/cron.weekly/00drop_caches \
+    vendor/cc/prebuilt/common/etc/cron/cron.hourly/01clear_cache:system/etc/cron/cron.hourly/01clear_cache \
+    vendor/cc/prebuilt/common/etc/cron/cron.daily/01clear_cache:system/etc/cron/cron.daily/01clear_cache \
+    vendor/cc/prebuilt/common/etc/cron/cron.weekly/01clear_cache:system/etc/cron/cron.weekly/01clear_cache 
+
+#paronoid settings
+PRODUCT_COPY_FILES += \
+    vendor/cc/prebuilt/common/etc/paranoid/backup.conf:system/etc/paranoid/backup.conf \
+    vendor/cc/prebuilt/common/etc/paranoid/properties.conf:system/etc/paranoid/properties.conf 
 
 # Required packages
 PRODUCT_PACKAGES += \
@@ -100,7 +100,8 @@ PRODUCT_PACKAGES += \
 
 # Extra Optional packages
 PRODUCT_PACKAGES += \
-    Trebuchet
+    Trebuchet \
+    ParanoidPreferences 
 
 # Extra tools
 PRODUCT_PACKAGES += \
@@ -109,23 +110,21 @@ PRODUCT_PACKAGES += \
     mke2fs \
     tune2fs
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/dictionaries
-PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/cc/overlay/dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/cc/overlay/common
 
 # T-Mobile theme engine
-include vendor/pa/config/themes_common.mk
+include vendor/cc/config/themes_common.mk
 
 PRODUCT_VERSION_MAJOR = 1
-PRODUCT_VERSION_MINOR = 1
+PRODUCT_VERSION_MINOR = 3
 PRODUCT_VERSION_MAINTENANCE = 0
 
-# Add CM release version
-CM_RELEASE := true
-CM_BUILD := $(BOARD)
 
-TARGET_CUSTOM_RELEASETOOL := vendor/pa/tools/squisher
+TARGET_CUSTOM_RELEASETOOL := \
+	vendor/cc/tools/squisher
 
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=JRO03R
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=JZO54K
 
 ifdef CNA_NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \

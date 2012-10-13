@@ -1,6 +1,6 @@
 # Inherit common stuff
-$(call inherit-product, vendor/pa/config/common.mk)
-$(call inherit-product, vendor/pa/config/common_drm_phone.mk)
+$(call inherit-product, vendor/cc/config/common.mk)
+$(call inherit-product, vendor/cc/config/common_drm_phone.mk)
 
 # BT config
 PRODUCT_COPY_FILES += \

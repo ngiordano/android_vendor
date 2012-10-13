@@ -1,8 +1,8 @@
 # Inherit common stuff
-$(call inherit-product, vendor/pa/config/common.mk)
-#$(call inherit-product, vendor/pa/config/common_drm_tablet.mk)
+$(call inherit-product, vendor/cc/config/common.mk)
+#$(call inherit-product, vendor/cc/config/common_drm_tablet.mk)
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/tablet
+PRODUCT_PACKAGE_OVERLAYS += vendor/cc/overlay/tablet
 
 # BT config
 PRODUCT_COPY_FILES += \
