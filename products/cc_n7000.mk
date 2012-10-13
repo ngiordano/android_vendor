@@ -8,8 +8,8 @@ include vendor/cc/config/gsm.mk
 
 PRODUCT_COPY_FILES +=  \
     vendor/cc/prebuilt/nexus7/bootanimation.zip:system/media/bootanimation.zip \
-  vendor/cc/prebuilt/pa_xhdpi.conf:system/etc/paranoid/properties.conf \
-  vendor/cc/prebuilt/pa_xhdpi.conf:system/etc/paranoid/backup.conf
+    vendor/cc/prebuilt/pa_xhdpi.conf:system/etc/paranoid/properties.conf \
+    vendor/cc/prebuilt/pa_xhdpi.conf:system/etc/paranoid/backup.conf
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := n7000

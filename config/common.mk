@@ -73,11 +73,6 @@ PRODUCT_COPY_FILES += \
     vendor/cc/prebuilt/common/etc/cron/cron.daily/01clear_cache:system/etc/cron/cron.daily/01clear_cache \
     vendor/cc/prebuilt/common/etc/cron/cron.weekly/01clear_cache:system/etc/cron/cron.weekly/01clear_cache 
 
-#paronoid settings
-PRODUCT_COPY_FILES += \
-    vendor/cc/prebuilt/common/etc/paranoid/backup.conf:system/etc/paranoid/backup.conf \
-    vendor/cc/prebuilt/common/etc/paranoid/properties.conf:system/etc/paranoid/properties.conf 
-
 # Required packages
 PRODUCT_PACKAGES += \
     Camera \

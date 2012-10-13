@@ -8,10 +8,10 @@ include vendor/cc/config/gsm.mk
 
 # include missing proprietaries
 PRODUCT_COPY_FILES += \
-  vendor/cc/proprietary/maguro/bcm4330.hcd:system/vendor/firmware/bcm4330.hcd \
-  vendor/cc/prebuilt/pa_xhdpi.conf:system/etc/paranoid/properties.conf \
-  vendor/cc/prebuilt/pa_xhdpi.conf:system/etc/paranoid/backup.conf \
-  vendor/cc/prebuilt/xhdpi/bootanimation.zip:system/media/bootanimation.zip
+    vendor/cc/proprietary/maguro/bcm4330.hcd:system/vendor/firmware/bcm4330.hcd \
+    vendor/cc/prebuilt/pa_xhdpi.conf:system/etc/paranoid/properties.conf \
+    vendor/cc/prebuilt/pa_xhdpi.conf:system/etc/paranoid/backup.conf \
+    vendor/cc/prebuilt/xhdpi/bootanimation.zip:system/media/bootanimation.zip
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := maguro
