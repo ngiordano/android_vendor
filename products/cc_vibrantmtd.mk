@@ -21,3 +21,5 @@ PRODUCT_DEVICE := vibrantmtd
 PRODUCT_NAME := cc_vibrantmtd
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SGH-T959
+
+GET_VENDOR_PROPS := $(shell vendor/cc/tools/getvendorprops.py $(PRODUCT_NAME))
