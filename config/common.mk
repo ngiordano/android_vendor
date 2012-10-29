@@ -5,6 +5,9 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/tp/overlay/dictionaries
 # T-Mobile theme engine
 include vendor/tp/config/themes_common.mk
 
+# Audio
+include frameworks/base/data/sounds/NewAudio.mk
+
 PRODUCT_PACKAGES += \
     AppWidgetPicker \
     LatinImeDictionary \
@@ -12,9 +15,11 @@ PRODUCT_PACKAGES += \
     MusicFX \
     MusicVisualization \
     NoiseField \
+    NovaLauncher \
     PhaseBeam \
     ROMControl \
     SuperSU \
+    Trebuchet \
     ParanoidPreferences 
 
 # Use prebuilt su until fixed when built
