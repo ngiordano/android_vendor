@@ -1,23 +1,23 @@
-ifeq (cc_grouper,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/cc_grouper.mk
+ifeq (tp_grouper,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/tp_grouper.mk
 endif
-ifeq (cc_galaxysmtd,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/cc_galaxysmtd.mk
+ifeq (tp_galaxysmtd,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/tp_galaxysmtd.mk
 endif
-ifeq (cc_vibrantmtd,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/cc_vibrantmtd.mk
+ifeq (tp_vibrantmtd,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/tp_vibrantmtd.mk
 endif
-ifeq (cc_maguro,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/cc_maguro.mk
+ifeq (tp_maguro,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/tp_maguro.mk
 endif
-ifeq (cc_hercules,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/cc_hercules.mk
+ifeq (tp_hercules,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/tp_hercules.mk
 endif
-ifeq (cc_skyrocket,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/cc_skyrocket.mk
+ifeq (tp_skyrocket,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/tp_skyrocket.mk
 endif
-ifeq (cc_n7000,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/cc_n7000.mk
+ifeq (tp_n7000,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/tp_n7000.mk
 endif
 
 

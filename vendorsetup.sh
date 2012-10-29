@@ -1,7 +1,7 @@
-add_lunch_combo cc_grouper-userdebug
-add_lunch_combo cc_vibrantmtd-userdebug
-add_lunch_combo cc_galaxysmtd-userdebug
-add_lunch_combo cc_maguro-userdebug
-add_lunch_combo cc_hercules-userdebug
-add_lunch_combo cc_skyrocket-userdebug
-add_lunch_combo cc_n7000-userdebug
+add_lunch_combo tp_grouper-userdebug
+add_lunch_combo tp_vibrantmtd-userdebug
+add_lunch_combo tp_galaxysmtd-userdebug
+add_lunch_combo tp_maguro-userdebug
+add_lunch_combo tp_hercules-userdebug
+add_lunch_combo tp_skyrocket-userdebug
+add_lunch_combo tp_n7000-userdebug

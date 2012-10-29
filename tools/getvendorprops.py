@@ -80,7 +80,7 @@ def add_to_manifest(repositories):
 
 def fetch_proprietaries(device):
     print 'Looking for vendor proprietaries'
-    proprietaries_path = 'vendor/cc/vendorprops/' + device + '.proprietaries'
+    proprietaries_path = 'vendor/tp/vendorprops/' + device + '.proprietaries'
 
     syncable_repos = []
 
